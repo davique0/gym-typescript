@@ -6,7 +6,7 @@ import {
   AcademicCapIcon
 } from "@heroicons/react/24/solid"
 import { motion } from "framer-motion";
-import Benefit from "./benefit";
+import Benefit from "./Benefit";
 import ActionButton from "@/shared/ActionButton";
 import BenefitPageGraphic from "@/assets/BenefitsPageGraphic.png";
 
