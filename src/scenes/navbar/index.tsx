@@ -32,7 +32,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             {/* Right Side */}
             {isAboveMediumScreens ? (<div className={`${flexBetween} w-full`}>
               {/* inner left side of right side */}
-              <div className={`${flexBetween} gap-8 text-sm`}>
+              <div className={`${flexBetween} gap-8 text-sm`} >
                 <Link
                   page="Home"
                   selectedPage={selectedPage}
@@ -80,11 +80,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </button>
           </div>
           {/* Menu Items */}
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+          <div className="ml-[33%] flex flex-col gap-10 text-2xl" onClick={() => setIsMenuToggled(!isMenuToggled)}>
             <Link
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
+
             />
             <Link
               page="Benefits"
